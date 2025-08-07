@@ -237,6 +237,28 @@ body{
         top: 100%;
         left: 112px;
     }
+}
 
+/* -----------> 1024px View <----------- */
+@media screen and (min-width: 1024px){
+    /* -----------> Card Container <----------- */
+    .cardContainer{
+        margin: 150px auto;
+    }
+}
 
+/* -----------> 1280px View <----------- */
+@media screen and (min-width: 1280px){
+    /* -----------> Card Container <----------- */
+    .cardContainer{
+        margin: 200px auto;
+    }
+}
+
+/* -----------> 1360px View <----------- */
+@media screen and (min-width: 1360px){
+    /* -----------> Card Container <----------- */
+    .cardContainer{
+        margin: 260px auto;
+    }
 }
