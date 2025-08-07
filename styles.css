@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root{
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --White: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body{
+    font-size: 13px;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+/* -----------> Card Container <----------- */
+.cardContainer{
+    width: 327px;
+    height: 512px;
+    background-color: var(--White);
+    margin: 74px auto;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* -----------> Image <----------- */
+.cardContainer__image{
+    height: 200px;
+    width: 100%;
+    background-image: url(images/drawers.jpg);
+    background-size: cover;
+    background-position-y: -16px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* -----------> Main <----------- */
+.cardContainer__main{
+    margin: 40px 36px 10px 33px;
+}
+
+.cardContainer__main__h1{
+    font-size: 1.231em;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+}
+
+.cardContainer__main__p{
+    color: var(--Desaturated-Dark-Blue);
+    margin: 18px 3px 0;
+    line-height: 1.5em;
+}
+
+/* -----------> Info Container <----------- */
+.cardContainer__infoContainer{
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.cardContainer__infoContainer__userImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 20px 0 33px;
+}
+
+.cardContainer__infoContainer__userInfo__name{
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.cardContainer__infoContainer__userInfo__date{
+    color: var(--Grayish-Blue);
+}
+
+/* -----------> Share Container <----------- */
+.cardContainer__shareContainer{
+    width: 327px;
+    height: 64px;
+    display: none;
+    align-items: center;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    bottom: 0;
+}
+
+.cardContainer__shareContainer__share{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: var(--Grayish-Blue);
+    margin: 0 22px 0 33px;
+}
+
+.cardContainer__shareContainer_icon{
+    margin-right: 17px;
+    margin-top: 4px;
+}
+
+.cardContainer__shareContainer_icon:hover{
+    transform: scale(1.1);
+    transition: 400ms;
+}
+
+
+/* -----------> Share Button <----------- */
+.cardContainer__shareButtonContainer{
+    width: 32px;
+    height: 32px;
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 50%;
+    padding: 8px 8.5px;
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
+    z-index: 1;
+    transition: 400ms;
+}
+
+.cardContainer__shareButtonContainer:hover{
+    cursor: pointer;
+    background-color: var(--Grayish-Blue);
+}
+
+.cardContainer__shareButtonContainer:hover path{
+    fill: var(--White);
+}
+
+/* -----------> Classes for toggle <----------- */
+.changeDisplay{
+    display: flex;
+}
+
+.rotateAnimation{
+    transform: rotate(365deg);
+    transition: 400ms;
+}
+
+.changeBackground{
+    background-color: var(--Grayish-Blue);
+}
+
+.changeBackground path{
+    fill: var(--White);
+}
+
+/* -----------> Footer <----------- */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--Desaturated-Dark-Blue);
+}
+
+.attribution a {
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+/* -----------> 885px View <----------- */
+@media screen and (min-width: 885px) {
+    /* -----------> Card Container <----------- */
+    .cardContainer{
+        width: 730px;
+        height: 280px;
+        margin: 100px auto;
+        display: flex;
+    }
+
+    /* -----------> Image <----------- */
+    .cardContainer__image{
+        height: 100%;
+        width: 285px;
+        background-position-y: unset;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .onlyFlex{
+        width: 445px;
+    }
+    
+    /* -----------> Main <----------- */
+    .cardContainer__main{
+       margin: 39px 56px 0 40px;
+    }
+
+    .cardContainer__main__h1{
+        font-size: 1.462em;
+    }
+
+    .cardContainer__main__p{
+        margin: 11px 3px 0 0;
+        font-size: 1.02em;
+    }
+
+    /* -----------> Info Container <----------- */
+    .cardContainer__infoContainer__userImage{
+        margin: 0 20px 0 40px;
+    }
+
+    /* -----------> Share Button <----------- */
+    .cardContainer__shareButtonContainer{
+        bottom: 36px;
+        right: 40px;
+    }
+
+    /* -----------> Share Container <----------- */
+    .cardContainer__shareContainer{
+        width: 248px;
+        height: 55px;
+        border-radius: 8px;
+        bottom: 96px;
+        right: -68px;
+    }
+
+    .cardContainer__shareContainer__share{
+        margin: 0 16px 0 36px;
+    }
+    
+    .cardContainer__shareContainer_icon{
+        margin-right: 16px;
+        margin-top: 4px;
+    }
+
+    .cardContainer__shareContainer::before{
+        content: "";
+        border: 12px solid;
+        border-color: var(--Very-Dark-Grayish-Blue) transparent transparent;
+        position: absolute;
+        top: 100%;
+        left: 112px;
+    }
+
+
+}

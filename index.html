@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+
+<body>
+
+  <div class="cardContainer">
+
+    <div class="cardContainer__image"></div>
+    
+    <div class="onlyFlex"> <!-- added after for 885px view-->
+      <main class="cardContainer__main">
+        <h1 class="cardContainer__main__h1">
+          Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home
+        </h1>
+        <p class="cardContainer__main__p">
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
+        </p>
+      </main>
+      <div class="cardContainer__infoContainer">
+        <img class="cardContainer__infoContainer__userImage" src="images/avatar-michelle.jpg" alt="User photo proflie">
+        <div class="cardContainer__infoContainer__userInfo">
+          <p class="cardContainer__infoContainer__userInfo__name">
+            Michelle Appleton
+          </p>
+          <p class="cardContainer__infoContainer__userInfo__date">
+            28 Jun 2020
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cardContainer__shareContainer" id="shareContainer">
+      <p class="cardContainer__shareContainer__share">
+        Share
+      </p>
+
+      <a target="_blank" href="https://www.facebook.com/Chospolo77" class="cardContainer__shareContainer_icon">
+        <img src="images/icon-facebook.svg" alt="Facebook icon">
+      </a>
+
+      <a target="_blank" href="https://x.com/BoichenkoPabloD" class="cardContainer__shareContainer_icon">
+        <img src="images/icon-twitter.svg" alt="Twitter icon">
+      </a>
+
+      <a target="_blank" href="https://ar.pinterest.com/chospolo/" class="cardContainer__shareContainer_icon">
+        <img src="images/icon-pinterest.svg" alt="Pinterest icon">
+      </a>
+    </div>
+
+    <div class="cardContainer__shareButtonContainer" id="shareButton">
+      <svg class="cardContainer__shareButtonContainer__button" xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+      </svg>
+    </div>
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a target="_blank" href="https://github.com/PablinViking">Pablo Boichenko</a>.
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
